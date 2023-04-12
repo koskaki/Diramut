@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/beranda"
+        android:title="Beranda"/>
+    <item
+        android:id="@+id/diagnosa"
+        android:icon="@drawable/diagnosa"
+        android:title="Diagnosa"/>
+
+    <item
+        android:id="@+id/daftarpenyakit"
+        android:icon="@drawable/daftarpenyakit"
+        android:title="Daftar penyakit"/>
+    <item
+        android:id="@+id/bantuan"
+        android:icon="@drawable/bantuan"
+        android:title="Bantuan"/>
+
+    <item
+        android:id="@+id/tentang"
+        android:icon="@drawable/tentang"
+        android:title="Tentang"/>
+
+
+
+</menu>

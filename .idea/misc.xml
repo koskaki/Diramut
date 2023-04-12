@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/bulatungu.xml" value="0.162" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/rounded_corner.xml" value="0.121" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape.xml" value="0.121" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape1.xml" value="0.12" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape2.xml" value="0.138" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape3.xml" value="0.138" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape4.xml" value="0.138" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shapepth.xml" value="0.12" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shapepurpleallroun.xml" value="0.138" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/warnamenubar.xml" value="0.12" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_main.xml" value="0.38450899031811897" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_bantuan.xml" value="0.24486571879936808" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_beranda.xml" value="0.33" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_diagnosa.xml" value="0.25" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_penyakit.xml" value="0.33" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_tentang.xml" value="0.2987551867219917" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/menu/menu.xml" value="0.10989583333333333" />
+        <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
+        <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/drawable/shape.xml" value="0.1075" />
+        <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
+        <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/layout/fragment_diagnosa.xml" value="0.10104166666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Diramut/app/src/main/res/layout/activity_main.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

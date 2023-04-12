@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diagnosa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            >
+            <TextView
+                android:id="@+id/diramutkk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Diagnosa penyakit"
+                android:textSize="28dp"
+                android:fontFamily="@font/bongkar"
+                android:textColor="@color/yellow"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/sistemmm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ceklis gejala sesuai dengan yang diderita kucing anda"
+                android:textSize="11dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/diramutkk"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape3"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape3"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Apa saja gejala yang dialami kucingmu ?"
+                android:gravity="left"
+                android:textSize="30dp"
+                android:textColor="#474747"
+                android:fontFamily="@font/spoky"
+                />
+
+            <CheckBox
+                android:id="@+id/g01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Bulu rontok yang menyebabkan kebotakan" />
+
+            <CheckBox
+                android:id="@+id/g02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Ada kerak putih di sekitar daun telinga" />
+
+            <CheckBox
+                android:id="@+id/g03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Kulit terlihat bersisik" />
+
+            <CheckBox
+                android:id="@+id/g04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Gatal sekitar telinga" />
+
+            <CheckBox
+                android:id="@+id/g05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Sering menggelengkan kepala" />
+
+            <CheckBox
+                android:id="@+id/g06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Sering menggaruk telinga yang ada luka" />
+
+            <CheckBox
+                android:id="@+id/g07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Muncul cairan bau dari dalam telinga" />
+
+            <CheckBox
+                android:id="@+id/g08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Posisi kepala yang selalu miring dan tidak mampu berjalan lurus" />
+
+            <CheckBox
+                android:id="@+id/g09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Mata belekan" />
+
+            <CheckBox
+                android:id="@+id/g10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Perut buncit tapi badan kurus" />
+
+            <CheckBox
+                android:id="@+id/g11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Diare" />
+
+            <CheckBox
+                android:id="@+id/g12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Keluar cacing saat muntah atau pada kotoran kucing" />
+
+            <CheckBox
+                android:id="@+id/g13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Ada kerontokan bulu yang berbentuk lingkaran" />
+
+            <CheckBox
+                android:id="@+id/g14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Sering menggaruk badan" />
+
+            <CheckBox
+                android:id="@+id/g15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Agresif (sering mengigit dengan ganas)" />
+
+            <CheckBox
+                android:id="@+id/g16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Sensitif (sering mencakar bila disentuh)" />
+
+            <CheckBox
+                android:id="@+id/g17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Tidak nafsu makan" />
+
+            <CheckBox
+                android:id="@+id/g18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Gelisah/suka bersembunyi/takut air" />
+
+            <CheckBox
+                android:id="@+id/g19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#474747"
+                android:text="Lemas/Lesu" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_diagnosa"
+                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape1"
+                android:layout_gravity="center"
+                android:text="Cek Diagnosa"
+                android:textSize="25sp"
+                android:fontFamily="@font/spoky"
+                android:textColor="@color/yellow"
+                android:backgroundTint="@color/purple"
+                />
+            <TextView
+                android:id="@+id/result"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textColor="@color/purple"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
