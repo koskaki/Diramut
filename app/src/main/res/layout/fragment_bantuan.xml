@@ -1,80 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bantuan">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bantuan"
+    >
 
-   <LinearLayout
-       android:id="@+id/judul2"
+   <ScrollView
        android:layout_width="match_parent"
-       android:layout_height="160dp"
-       android:background="@drawable/shape2"
-       android:orientation="vertical"
-       android:gravity="center">
-      <TextView
-          android:id="@+id/diramutk2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Diramut"
-          android:textSize="75dp"
-          android:fontFamily="@font/spoky"
-          android:textColor="@color/yellow"
-          android:layout_centerHorizontal="true"
-          />
-      <TextView
-          android:id="@+id/sistemm2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="sistem pakar diagnosa penyakit kucing"
-          android:textSize="11dp"
-          android:textColor="@color/white"
-          android:layout_marginTop="-15dp"
-          android:layout_centerHorizontal="true"
-          android:layout_below="@+id/diramutk"
-          />
-   </LinearLayout>
-   <LinearLayout
+       android:layout_height="match_parent"
+       >
+      <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="180dp"
-       android:layout_marginRight="40dp"
-       android:layout_marginLeft="40dp"
+       android:layout_height="match_parent"
        android:orientation="vertical"
        >
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Bantuan"
-          android:textSize="45dp"
-          android:fontFamily="@font/snaphand"
-          android:textColor="#646464"
-          />
-      <ImageView
-          android:layout_width="110dp"
-          android:layout_height="8dp"
-          android:background="@drawable/shape1"
-          />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="20dp"
-          android:text="1. Buka Aplikasinya"
-          android:textSize="20dp"
-          android:fontFamily="sans-serif-medium"
-          android:textColor="@color/black"
-         />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="5dp"
-          android:text="2. Buka Aplikasinya"
-          android:textSize="20dp"
-          android:fontFamily="sans-serif-medium"
-          android:textColor="@color/black"
-          />
 
 
-   </LinearLayout>
+      <LinearLayout
+          android:id="@+id/judul2"
+          android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:background="@drawable/shape2"
+          android:gravity="center"
+          android:orientation="vertical">
 
-</FrameLayout>
+         <TextView
+             android:id="@+id/diramutk2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:fontFamily="@font/spoky"
+             android:text="Diramut"
+             android:textColor="@color/yellow"
+             android:textSize="75dp" />
+
+         <TextView
+             android:id="@+id/sistemm2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/diramutk"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="-15dp"
+             android:text="sistem pakar diagnosa penyakit kucing"
+             android:textColor="@color/white"
+             android:textSize="11dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
+          android:layout_marginRight="40dp"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/snaphand"
+             android:text="Bantuan"
+             android:textColor="#646464"
+             android:textSize="45dp" />
+
+         <ImageView
+             android:layout_width="110dp"
+             android:layout_height="8dp"
+             android:background="@drawable/shape1" />
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Bingung cara pemakaian?"
+                   android:textColor="@color/purple"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:id="@+id/details1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Cara pemakain aplikasi ini cukup mudah, masuk menu diagnosa, ceklis gejala sesuai yang dialami kucing anda, lalu tekan tombol diagnosa, maka akan keluar hasil diagnosa dan solusinya."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Cara Kerja aplikasi ini ?"
+                   android:textColor="@color/purple"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:id="@+id/details2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Aplikasi ini menggunakan metode forward chaining dimana pengguan sistem and dalam mendiagnosa penyakit itu sendiiri."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Diagnosa penyakit tidak keluar ?"
+                   android:textColor="@color/purple"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:id="@+id/details3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Apabila diagnosa penyakit tidak keluar, maka gejala yang dialami oleh kucing tidak memenuhi syarat dari forward chaining."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Keakurasian Diagnosa penyakit dalam aplikasi diramut ?"
+                   android:textColor="@color/purple"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:id="@+id/details4"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Diagnosa penyakit dalam aplikasi ini merujuk kepada seorang pakar ahli, yang mana seorang parak tersebut adalah dokter hewan itu sendiri."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+      </LinearLayout>
+      </LinearLayout>
+
+   </ScrollView>
+
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/hubungi"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="16dp"
+          android:background="@color/green"
+          android:contentDescription="@string/app_name"
+          android:src="@drawable/ic_baseline_call_24"
+          app:backgroundTint="@color/green"
+          app:rippleColor="@color/white" />
+
+
+</RelativeLayout>

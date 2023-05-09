@@ -18,6 +18,7 @@
             android:orientation="vertical"
             android:gravity="left"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             >
             <TextView
                 android:id="@+id/diramutkk"
@@ -56,6 +57,7 @@
                 android:background="@drawable/shape3"
                 android:orientation="vertical"
                 android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="40dp"
                 >
             <TextView
@@ -221,11 +223,22 @@
                 android:textColor="#474747"
                 android:text="Lemas/Lesu" />
 
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
             <Button
                 android:id="@+id/btn_diagnosa"
-                android:layout_marginTop="10dp"
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/shape1"
                 android:layout_gravity="center"
@@ -235,9 +248,18 @@
                 android:textColor="@color/yellow"
                 android:backgroundTint="@color/purple"
                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+
+                >
             <TextView
                 android:id="@+id/result"
-                android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Result"
@@ -245,7 +267,8 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_marginBottom="40dp"/>
+                />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

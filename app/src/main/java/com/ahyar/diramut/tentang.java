@@ -1,64 +1,85 @@
 package com.ahyar.diramut;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link tentang#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
+
 public class tentang extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public tentang() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment tentang.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static tentang newInstance(String param1, String param2) {
-        tentang fragment = new tentang();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    LinearLayout profil1, pro1, profil2, pro2, profil3, pro3, profil4, pro4;
+    TextView bio1, bio2, bio3, bio4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tentang, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_tentang, container, false);
+
+        profil1 = rootView.findViewById(R.id.profil1);
+        profil2 = rootView.findViewById(R.id.profil2);
+        profil3 = rootView.findViewById(R.id.profil3);
+        profil4 = rootView.findViewById(R.id.profil4);
+
+        pro1 = rootView.findViewById(R.id.prof1);
+        pro2 = rootView.findViewById(R.id.prof2);
+        pro3 = rootView.findViewById(R.id.prof3);
+        pro4 = rootView.findViewById(R.id.prof4);
+
+        bio1 = rootView.findViewById(R.id.bio1);
+        bio2 = rootView.findViewById(R.id.bio2);
+        bio3 = rootView.findViewById(R.id.bio3);
+        bio4 = rootView.findViewById(R.id.bio4);
+
+        profil1.setOnClickListener(view -> {
+            if (bio1.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(pro1, new AutoTransition());
+                bio1.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(pro1, new AutoTransition());
+                bio1.setVisibility(View.VISIBLE);
+            }
+        });
+
+        profil2.setOnClickListener(view -> {
+            if (bio2.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(pro2, new AutoTransition());
+                bio2.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(pro2, new AutoTransition());
+                bio2.setVisibility(View.VISIBLE);
+            }
+        });
+
+        profil3.setOnClickListener(view -> {
+            if (bio3.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(pro3, new AutoTransition());
+                bio3.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(pro3, new AutoTransition());
+                bio3.setVisibility(View.VISIBLE);
+            }
+        });
+
+        profil4.setOnClickListener(view -> {
+            if (bio4.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(pro4, new AutoTransition());
+                bio4.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(pro4, new AutoTransition());
+                bio4.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+
+        return rootView;
     }
 }

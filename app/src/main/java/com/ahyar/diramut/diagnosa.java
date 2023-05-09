@@ -1,17 +1,14 @@
 package com.ahyar.diramut;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 
 
@@ -59,26 +56,30 @@ public class diagnosa extends Fragment {
             @Override
             public void onClick(View v) {
 
-                String NamaPenyakit = "Kucing anda menderita penyakit\n";
+                String NamaPenyakit = "";
+
 
                 if (checkg01.isChecked() && checkg02.isChecked() && checkg03.isChecked()
                         && checkg04.isChecked()) {
                     NamaPenyakit += "Scabies";
                 }
-                if (checkg05.isChecked() && checkg06.isChecked() && checkg07.isChecked()
+                else if (checkg05.isChecked() && checkg06.isChecked() && checkg07.isChecked()
                         && checkg08.isChecked() && checkg17.isChecked() && checkg19.isChecked()) {
                     NamaPenyakit += "Otitis";
                 }
-                if (checkg09.isChecked() && checkg10.isChecked() && checkg11.isChecked()
+                else if (checkg09.isChecked() && checkg10.isChecked() && checkg11.isChecked()
                         && checkg12.isChecked() && checkg17.isChecked() && checkg19.isChecked()) {
                     NamaPenyakit += "Cacingan";
                 }
-                if (checkg01.isChecked() && checkg13.isChecked() && checkg14.isChecked()) {
+                else if (checkg01.isChecked() && checkg13.isChecked() && checkg14.isChecked()) {
                     NamaPenyakit += "Ringworm";
                 }
-                if (checkg15.isChecked() && checkg16.isChecked() && checkg18.isChecked()
+                else if (checkg15.isChecked() && checkg16.isChecked() && checkg18.isChecked()
                         && checkg19.isChecked()) {
                     NamaPenyakit += "Rabies";
+                }
+                else {
+                    NamaPenyakit += "Gejala dan penyakit tidak terdaftar\natau anda belum menceklis";
                 }
 
 

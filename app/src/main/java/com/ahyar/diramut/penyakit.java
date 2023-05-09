@@ -1,64 +1,116 @@
 package com.ahyar.diramut;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link penyakit#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.ahyar.diramut.adapter.Adapter;
+import com.ahyar.diramut.helper.Helper;
+import com.ahyar.diramut.model.Data;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+
 public class penyakit extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public penyakit() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment penyakit.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static penyakit newInstance(String param1, String param2) {
-        penyakit fragment = new penyakit();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    ListView listView;
+    AlertDialog.Builder dialog;
+    List<Data> lists = new ArrayList<>();
+    Adapter adapter;
+    Helper dbpenyakit = new Helper(getActivity()); //= new Helper(requireContext());
+    FloatingActionButton tambah;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_penyakit, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_penyakit, container, false);
+
+        dbpenyakit = new Helper(getActivity().getApplicationContext());
+        //dbpenyakit = new Helper(getApplicationContext());
+        tambah = rootView.findViewById(R.id.tambah);
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction flpenyakit = getFragmentManager().beginTransaction();
+                flpenyakit.replace(R.id.flfragment, new create());
+                flpenyakit.commit();
+                // public void onClick(View view) {
+                //Intent intent = new Intent(penyakit.this, create.class);
+                //        startActivity(intent);
+            }
+        });
+
+        listView = rootView.findViewById(R.id.listview);
+        adapter = new Adapter(getActivity(), lists);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemLongClickListener((adapterView, view, i, I) -> {
+            final String id = lists.get(i).getId();
+            final String nmpenyakit = lists.get(i).getNamapenyakit();
+            final String dkpenyakit = lists.get(i).getDeskripsi();
+            final String gejala = lists.get(i).getGejala();
+            final String solusi = lists.get(i).getSolusi();
+            final CharSequence[] dialogItem = {"Edit", "Hapus"};
+            dialog = new AlertDialog.Builder(getContext());
+            dialog.setItems(dialogItem, (dialog, which) -> {
+                switch (i) {
+                    case 0:
+                        //For FRAGMENT-->getActivity()
+                        //For ACTIVITY ---> Activity.this
+                        Intent intent = new Intent(getActivity(), create.class);
+                        intent.putExtra("id", id);
+                        intent.putExtra("penyakit", nmpenyakit);
+                        intent.putExtra("deskripsi", dkpenyakit);
+                        intent.putExtra("gejala", gejala);
+                        intent.putExtra("solusi", solusi);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        dbpenyakit.delete(Integer.parseInt(id));
+                        lists.clear();
+                        getData();
+                        break;
+                }
+            }).show();
+            return false;
+        });
+        getData();
+        return rootView;
+    }
+    private void getData(){
+        ArrayList<HashMap<String, String>> rows = dbpenyakit.getAll();
+        for (int i = 0; i<rows.size(); i++){
+            String id = rows.get(i).get("id");
+            String nmpenyakit = rows.get(i).get("nmpenyakit");
+            String dkpenyakit = rows.get(i).get("dkpenyakit");
+            String gejala = rows.get(i).get("gejala");
+            String solusi = rows.get(i).get("solusi");
+
+            Data data = new Data();
+            data.setId(id);
+            data.setNamapenyakit(nmpenyakit);
+            data.setDeskripsi(dkpenyakit);
+            data.setGejala(gejala);
+            data.setSolusi(solusi);
+            lists.add(data);
+        }
+        adapter.notifyDataSetChanged();
+    }
+    @Override
+    public void  onResume(){
+        super.onResume();
+        lists.clear();
+        getData();
     }
 }

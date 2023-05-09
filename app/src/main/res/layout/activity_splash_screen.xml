@@ -11,14 +11,14 @@
         android:id="@+id/diramutkun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diramut"
-        android:textSize="100dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/spoky"
+        android:text="Diramut"
         android:textColor="@color/yellow"
-        android:layout_centerHorizontal="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/sistem"/>
+        android:textSize="100dp"
+        app:layout_constraintBottom_toTopOf="@id/sistem"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/sistem"
         android:layout_width="wrap_content"
@@ -91,9 +91,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/homepet"
         android:layout_below="@+id/sl"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
         />
 
 

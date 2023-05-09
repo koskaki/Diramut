@@ -1,65 +1,103 @@
 package com.ahyar.diramut;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link bantuan#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+
 public class bantuan extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    TextView details1, details2, details3, details4;
+    LinearLayout layout1, layout2, layout3, layout4;
+    CardView card1, card2, card3, card4;
+    FloatingActionButton hubungi;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public bantuan() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment bantuan.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static bantuan newInstance(String param1, String param2) {
-        bantuan fragment = new bantuan();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bantuan, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_bantuan, container, false);
+
+        hubungi = rootView.findViewById(R.id.hubungi);
+
+        card1 = rootView.findViewById(R.id.card1);
+        card2 = rootView.findViewById(R.id.card2);
+        card3 = rootView.findViewById(R.id.card3);
+        card4 = rootView.findViewById(R.id.card4);
+
+        details1 = rootView.findViewById(R.id.details1);
+        details2 = rootView.findViewById(R.id.details2);
+        details3 = rootView.findViewById(R.id.details3);
+        details4 = rootView.findViewById(R.id.details4);
+
+        layout1 = rootView.findViewById(R.id.layout1);
+        layout2 = rootView.findViewById(R.id.layout2);
+        layout3 = rootView.findViewById(R.id.layout3);
+        layout4 = rootView.findViewById(R.id.layout4);
+
+        hubungi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url="https://wa.me/628983197209/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+        }});
+
+        card1.setOnClickListener(view -> {
+            if (details1.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(layout1, new AutoTransition());
+                details1.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(layout1, new AutoTransition());
+                details1.setVisibility(View.VISIBLE);
+            }
+        });
+
+        card2.setOnClickListener(view -> {
+            if (details2.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(layout2, new AutoTransition());
+                details2.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(layout2, new AutoTransition());
+                details2.setVisibility(View.VISIBLE);
+            }
+        });
+
+        card3.setOnClickListener(view -> {
+            if (details3.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(layout3, new AutoTransition());
+                details3.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(layout3, new AutoTransition());
+                details3.setVisibility(View.VISIBLE);
+            }
+        });
+
+        card4.setOnClickListener(view -> {
+            if (details4.getVisibility() == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(layout4, new AutoTransition());
+                details4.setVisibility(View.GONE);
+            } else {
+                TransitionManager.beginDelayedTransition(layout4, new AutoTransition());
+                details4.setVisibility(View.VISIBLE);
+            }
+        });
+
+        return rootView;
     }
+
 }
