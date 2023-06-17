@@ -59,20 +59,85 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:fontFamily="@font/snaphand"
+             android:layout_marginTop="20dp"
              android:text="Bantuan"
              android:textColor="#646464"
-             android:textSize="45dp" />
+             android:textSize="35dp" />
 
          <ImageView
-             android:layout_width="110dp"
+             android:layout_width="90dp"
              android:layout_height="8dp"
              android:background="@drawable/shape1" />
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card11"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/yellow"
+             app:cardCornerRadius="15dp">
+
+         <LinearLayout
+             android:id="@+id/layout11"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:animateLayoutChanges="true"
+             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Lokasi Klinik Terdekat"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+         </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card12"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/purple"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Lokasi Klinik Hewan Vet House"
+                   android:textColor="@color/white"
+                   android:textSize="16dp" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
 
          <androidx.cardview.widget.CardView
              android:id="@+id/card1"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:layout_marginTop="20dp"
+             android:layout_marginTop="10dp"
              android:background="@drawable/shape1"
              android:clickable="true"
              android:foreground="?android:attr/selectableItemBackground"
@@ -94,9 +159,9 @@
                    android:layout_marginRight="15dp"
                    android:layout_marginBottom="15dp"
                    android:fontFamily="sans-serif-medium"
-                   android:text="Bingung cara pemakaian?"
+                   android:text="Bagaimana cara pemakaian aplikasi ini?"
                    android:textColor="@color/purple"
-                   android:textSize="18dp" />
+                   android:textSize="16dp"  />
 
                <TextView
                    android:id="@+id/details1"
@@ -140,9 +205,9 @@
                    android:layout_marginRight="15dp"
                    android:layout_marginBottom="15dp"
                    android:fontFamily="sans-serif-medium"
-                   android:text="Cara Kerja aplikasi ini ?"
+                   android:text="Metode apa yang digunakan dalam aplikasi ini?"
                    android:textColor="@color/purple"
-                   android:textSize="18dp" />
+                   android:textSize="16dp"  />
 
                <TextView
                    android:id="@+id/details2"
@@ -186,9 +251,9 @@
                    android:layout_marginRight="15dp"
                    android:layout_marginBottom="15dp"
                    android:fontFamily="sans-serif-medium"
-                   android:text="Diagnosa penyakit tidak keluar ?"
+                   android:text="Diagnosa penyakit tidak keluar lebih dari 1 ?"
                    android:textColor="@color/purple"
-                   android:textSize="18dp" />
+                   android:textSize="16dp"  />
 
                <TextView
                    android:id="@+id/details3"
@@ -199,7 +264,7 @@
                    android:layout_marginRight="25dp"
                    android:layout_marginBottom="15dp"
                    android:justificationMode="inter_word"
-                   android:text="Apabila diagnosa penyakit tidak keluar, maka gejala yang dialami oleh kucing tidak memenuhi syarat dari forward chaining."
+                   android:text="Apabila diagnosa penyakit keluar lebih dari 1, maka itu hal normal karena 1 gejala bisa dimiliki beberapa kemungkinan penyakit dan aplikasi ini juga menggunakan logi OR."
                    android:textColor="@color/black"
                    android:textSize="14dp"
                    android:visibility="gone" />
@@ -211,7 +276,6 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:layout_marginTop="10dp"
-             android:layout_marginBottom="10dp"
              android:background="@drawable/shape1"
              android:clickable="true"
              android:foreground="?android:attr/selectableItemBackground"
@@ -233,9 +297,9 @@
                    android:layout_marginRight="15dp"
                    android:layout_marginBottom="15dp"
                    android:fontFamily="sans-serif-medium"
-                   android:text="Keakurasian Diagnosa penyakit dalam aplikasi diramut ?"
+                   android:text="Bagaimana keakurasian aplikasi ini?"
                    android:textColor="@color/purple"
-                   android:textSize="18dp" />
+                   android:textSize="16dp"  />
 
                <TextView
                    android:id="@+id/details4"
@@ -246,16 +310,197 @@
                    android:layout_marginRight="25dp"
                    android:layout_marginBottom="15dp"
                    android:justificationMode="inter_word"
-                   android:text="Diagnosa penyakit dalam aplikasi ini merujuk kepada seorang pakar ahli, yang mana seorang parak tersebut adalah dokter hewan itu sendiri."
+                   android:text="Diagnosa penyakit dalam aplikasi ini merujuk kepada seorang pakar ahli, yang mana seorang pakar tersebut adalah dokter hewan, yaitu drh. Firda Pebriyanti."
                    android:textColor="@color/black"
                    android:textSize="14dp"
                    android:visibility="gone" />
             </LinearLayout>
          </androidx.cardview.widget.CardView>
 
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
 
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
 
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Bagaimana aplikasi ini dapat membantu pemilik kucing?"
+                   android:textColor="@color/purple"
+                   android:textSize="16dp"  />
 
+               <TextView
+                   android:id="@+id/details5"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Aplikasi ini dapat memberikan informasi awal tentang kemungkinan penyakit yang dialami oleh kucing berdasarkan gejala yang diberikan, sehingga pemilik kucing dapat mengambil langkah-langkah selanjutnya seperti berkonsultasi dengan dokter hewan."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Apakah aplikasi ini dapat menggantikan peran dokter hewan?"
+                   android:textColor="@color/purple"
+                   android:textSize="16dp"  />
+
+               <TextView
+                   android:id="@+id/details6"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Tidak, sistem ini tidak dapat menggantikan peran dokter hewan. Diagnosis yang diberikan oleh sistem hanya bersifat informatif dan tidak dapat menggantikan pemeriksaan dan konsultasi langsung dengan dokter hewan."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Apakah aplikasi memerlukan koneksi internet?"
+                   android:textColor="@color/purple"
+                   android:textSize="16dp"  />
+
+               <TextView
+                   android:id="@+id/details7"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Untuk mendiagnosa sebuah penyakit aplikasi ini tidak memerlukan internet."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/card8"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="20dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Apakah aplikasi ini dapat digunakan oleh pemilik kucing yang tidak memiliki pengetahuan medis sebelumnya?"
+                   android:textColor="@color/purple"
+                   android:textSize="16dp"  />
+
+               <TextView
+                   android:id="@+id/details8"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginBottom="15dp"
+                   android:justificationMode="inter_word"
+                   android:text="Ya, aplikasi ini dirancang untuk digunakan oleh pemilik kucing tanpa latar belakang medis, dengan antarmuka yang mudah dipahami."
+                   android:textColor="@color/black"
+                   android:textSize="14dp"
+                   android:visibility="gone" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
 
 
       </LinearLayout>

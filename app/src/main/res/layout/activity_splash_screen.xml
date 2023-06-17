@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/spoky"
         android:text="Diramut"
         android:textColor="@color/yellow"
@@ -30,60 +30,72 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/diramutkun"
         />
+
     <LinearLayout
         android:id="@+id/sl"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="120dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/sistem"
-        >
-
-    <TextView
-        android:id="@+id/selamat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selamat Datang"
-        android:textSize="40dp"
-        android:fontFamily="@font/spoky"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/sistem"
-        />
-
-    <LinearLayout
-        android:id="@+id/btnlanjut"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:onClick="lnjutbtn"
+        android:layout_marginTop="100dp"
         android:gravity="center"
-        android:background="@drawable/shape1"
-        >
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sistem"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/spoky"
+            android:text="Selamat Datang"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:id="@+id/btnlanjut"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="lnjutbtn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lanjut"
+                android:textColor="@color/purple"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ahyar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlanjut"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="dibuat oleh Ahmad Ahyar S"
+            android:textColor="@color/white"
+            android:textSize="8dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lanjut"
-            android:textSize="18dp"
-            android:textColor="@color/purple"
-            />
+            android:layout_marginTop="50dp"
+            android:text="partner by:"
+            android:textColor="@color/yellow"
+            android:textSize="10dp" />
 
-     </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/vet" />
 
-    <TextView
-        android:id="@+id/ahyar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dibuat oleh Ahmad Ahyar S"
-        android:textSize="8dp"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnlanjut"
-        />
+
     </LinearLayout>
 
     <ImageView
@@ -91,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/homepet"
         android:layout_below="@+id/sl"
         android:layout_alignParentBottom="true"

@@ -1,8 +1,8 @@
 package com.ahyar.diramut;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,13 +17,12 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     private bantuan bantuan= new bantuan();
     private diagnosa diagnosa = new diagnosa();
     private tentang tentang = new tentang();
-    private penyakit penyakit = new penyakit();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         bottomNavigationView = findViewById(R.id.nav);
@@ -41,7 +40,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
                 getSupportFragmentManager().beginTransaction().replace(R.id.flfragment, diagnosa).commit();
                 return true;
             case R.id.daftarpenyakit:
-                getSupportFragmentManager().beginTransaction().replace(R.id.flfragment, penyakit).commit();
+                Intent intent = new Intent(this,dftpenyakit.class);
+                startActivity(intent);
                 return true;
             case R.id.bantuan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.flfragment, bantuan).commit();

@@ -1,5 +1,6 @@
 package com.ahyar.diramut;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,9 +48,8 @@ public class beranda extends Fragment {
         Daftarbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction flberanda = getFragmentManager().beginTransaction();
-                flberanda.replace(R.id.flfragment, new penyakit ());
-                flberanda.commit();
+                Intent intent = new Intent(getActivity(), dftpenyakit.class);
+                startActivity(intent);
             }
         });
 

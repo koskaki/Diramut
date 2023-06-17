@@ -1,4 +1,4 @@
-package com.ahyar.diramut.model;
+package com.ahyar.diramut;
 
 import static androidx.core.app.ActivityCompat.requestPermissions;
 

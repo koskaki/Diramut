@@ -1,15 +1,11 @@
-package com.ahyar.diramut.model;
+package com.ahyar.diramut;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Contact implements Parcelable {
     private int id;
-    private String firstName;
-    private String lastName;
-    private String mobile;
-    private String email;
-    private String image;
+    private String nmpenyakit, deskripsi, gejala, solusi, image;
 
     public int getId() {
         return id;
@@ -19,36 +15,36 @@ public class Contact implements Parcelable {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getNmpenyakit() {
+        return nmpenyakit;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setNmpenyakit(String nmpenyakit) {
+        this.nmpenyakit = nmpenyakit;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getDeskripsi() {
+        return deskripsi;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getGejala() {
+        return gejala;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setGejala(String gejala) {
+        this.gejala = gejala;
     }
 
-    public String getEmail() {
-        return email;
+    public String getSolusi() {
+        return solusi;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSolusi(String solusi) {
+        this.solusi = solusi;
     }
 
     public String getImage() {
@@ -70,19 +66,19 @@ public class Contact implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.id);
-        dest.writeString(this.firstName);
-        dest.writeString(this.lastName);
-        dest.writeString(this.mobile);
-        dest.writeString(this.email);
+        dest.writeString(this.nmpenyakit);
+        dest.writeString(this.deskripsi);
+        dest.writeString(this.gejala);
+        dest.writeString(this.solusi);
         dest.writeString(this.image);
     }
 
     protected Contact(Parcel in) {
         this.id = in.readInt();
-        this.firstName = in.readString();
-        this.lastName = in.readString();
-        this.mobile = in.readString();
-        this.email = in.readString();
+        this.nmpenyakit = in.readString();
+        this.deskripsi = in.readString();
+        this.gejala = in.readString();
+        this.solusi = in.readString();
         this.image = in.readString();
     }
 

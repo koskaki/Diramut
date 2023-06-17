@@ -1,30 +1,54 @@
 package com.ahyar.diramut;
 
+import android.content.ContentValues;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.content.Context;
-import android.util.Log;
 
-public class database extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "biodata.db";
-    private static final int DATABASE_VERSION = 1;
+public class DataHelper extends SQLiteOpenHelper {
 
-    public  database (Context context){
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    public static final String DB_NAME = "contacts.db";
+    public static final String TABLE_NAME = "CONTACTS";
+    public static final int DB_VERSION = 3;
+
+    public static final String COLUMN_1 = "ID";
+    public static final String COLUMN_2 = "NMPENYAKIT";
+    public static final String COLUMN_3 = "DESKRIPSI";
+    public static final String COLUMN_4 = "GEJALA";
+    public static final String COLUMN_5 = "SOLUSI";
+    public static final String COLUMN_6 = "IMAGE";
+    public static final String QUERY_CREATE = "CREATE TABLE "+TABLE_NAME+" ("
+            +COLUMN_1+" INTEGER PRIMARY KEY AUTOINCREMENT, "
+            +COLUMN_2+" TEXT, "
+            +COLUMN_3+" TEXT, "
+            +COLUMN_4+" TEXT, "
+            +COLUMN_5+" TEXT, "
+            +COLUMN_6+" TEXT)";
+
+
+
+
+    public DataHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, DB_NAME, null, DB_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table biodata(no integer primary key,nama text null,tgl text null,jk text null,alamat text null);";
-        Log.d("Data","onCreate: " + sql);
-        db.execSQL(sql);
-        sql = "INSERT INTO biodata (no,nama,tgl,jk,alamat) VALUES ('1001','Anto Kurniawan','14-02-1996','L','Semarang');";
-        db.execSQL(sql);
-    }
+        db.execSQL(QUERY_CREATE);
+        }
+
+
 
     @Override
-    public void onUpgrade(SQLiteDatabase arg0, int arg1,int arg2) {
-
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
+        onCreate(db);
     }
-}
 
+
+    public void insertData(ContentValues values){
+        getWritableDatabase().insert(TABLE_NAME, null, values);
+    }
+
+
+}

@@ -8,446 +8,345 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
-    <LinearLayout
-        android:id="@+id/judul"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:background="@drawable/rounded_corner"
-        android:orientation="vertical"
-        android:gravity="center">
-        <TextView
-            android:id="@+id/diramutk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Diramut"
-            android:textSize="75dp"
-            android:fontFamily="@font/spoky"
-            android:textColor="@color/purple"
-            android:layout_centerHorizontal="true"
-            />
-        <TextView
-            android:id="@+id/sistemm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="sistem pakar diagnosa penyakit kucing"
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_marginTop="-15dp"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/diramutk"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tentang"
-            android:textSize="45dp"
-            android:fontFamily="@font/snaphand"
-            android:textColor="#646464"
-            />
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="8dp"
-            android:background="@drawable/shape1"
-            />
-
-    <LinearLayout
-        android:id="@+id/profil1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shapepth"
-        android:outlineAmbientShadowColor="@color/black"
-        android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        >
-        <LinearLayout
-            android:id="@+id/prof1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:orientation="vertical"
-            >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            >
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/shape4"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="20dp"
-            app:cardCornerRadius="20dp"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_baseline_person_24"
-                android:color="@color/black"
-                />
-        </LinearLayout>
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ahmad Ahyar Sholihuddin"
-                android:textSize="16dp"
-                android:textColor="@color/purple"
-                android:fontFamily="@font/futurastdheavy"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Mahasiswa Umsida"
-                android:textSize="12dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/futurabook"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Pembuat"
-                android:textSize="12dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/futurabook"
-                />
-        </LinearLayout>
-
-        </LinearLayout>
-        <TextView
-            android:id="@+id/bio1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="-10dp"
-            android:layout_marginBottom="20dp"
-            android:text="Saya adalah seorang mahasiswa infromatika, didalam fakultas saint dan teknologi Umsida, yang sedahng menyelesaikan Skripsi."
-            android:textSize="14dp"
-            android:justificationMode="inter_word"
-            android:fontFamily="@font/futurabook"
-            android:textColor="@color/black"
-            android:visibility="gone"
-            />
-        </LinearLayout>
-    </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/profil2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapepth"
-            android:outlineAmbientShadowColor="@color/black"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            >
             <LinearLayout
-                android:id="@+id/prof2"
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/diramutk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/spoky"
+                    android:text="Diramut"
+                    android:textColor="@color/purple"
+                    android:textSize="75dp" />
+
+                <TextView
+                    android:id="@+id/sistemm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diramutk"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-15dp"
+                    android:text="sistem pakar diagnosa penyakit kucing"
+                    android:textColor="@color/black"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:orientation="vertical"
-                >
-                <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    >
+                    android:fontFamily="@font/snaphand"
+                    android:layout_marginTop="20dp"
+                    android:text="Tentang"
+                    android:textColor="#646464"
+                    android:textSize="35dp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/shape1" />
+
+                <LinearLayout
+                    android:id="@+id/profil4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapepth"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:outlineAmbientShadowColor="@color/black">
 
                     <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@drawable/shape4"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
-                        app:cardCornerRadius="20dp"
-                        >
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_person_24"
-                            android:color="@color/black"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
+                        android:id="@+id/prof4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_gravity="left"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nama Dosen"
-                            android:textSize="16dp"
-                            android:textColor="@color/purple"
-                            android:fontFamily="@font/futurastdheavy"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Dosen Umsida"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Pembimbing"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
-                <TextView
-                    android:id="@+id/bio2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginTop="-10dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="Cara pemakain aplikasi ini cukup mudah, masuk menu diagnosa, ceklis gejala sesuai yang dialami kucing anda, lalu tekan tombol diagnosa, maka akan keluar hasil diagnosa dan solusinya."
-                    android:textSize="14dp"
-                    android:justificationMode="inter_word"
-                    android:fontFamily="@font/futurabook"
-                    android:textColor="@color/black"
-                    android:visibility="gone"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/profil3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapepth"
-            android:outlineAmbientShadowColor="@color/black"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            >
-            <LinearLayout
-                android:id="@+id/prof3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@drawable/shape4"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
-                        app:cardCornerRadius="20dp"
-                        >
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_person_24"
-                            android:color="@color/black"
-                            />
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/shape4"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:color="@color/black"
+                                    android:src="@drawable/ic_baseline_person_24" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futurastdheavy"
+                                    android:text="drh. Firda Perbriyanti"
+                                    android:textColor="@color/purple"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Dokter Hewan"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Ahli Pakar"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bio4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/futurabook"
+                            android:justificationMode="inter_word"
+                            android:text="drh. Firda Perbriyanti adalah seorang dokter hewan di Klinik Vet House yang memiliki keahlian dan kompetensi tinggi dalam bidang kedokteran hewan. Beliau memiliki dedikasi yang tinggi untuk memberikan perawatan yang terbaik kepada hewan peliharaan dan membantu pemiliknya dalam menjaga kesehatan hewan kesayangan mereka."
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
                     </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profil2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapepth"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:outlineAmbientShadowColor="@color/black">
+
                     <LinearLayout
+                        android:id="@+id/prof2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_gravity="left"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nama Dosen"
-                            android:textSize="16dp"
-                            android:textColor="@color/purple"
-                            android:fontFamily="@font/futurastdheavy"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Dosen Umsida"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Dosen Penguji"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
-                <TextView
-                    android:id="@+id/bio3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginTop="-10dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="Cara pemakain aplikasi ini cukup mudah, masuk menu diagnosa, ceklis gejala sesuai yang dialami kucing anda, lalu tekan tombol diagnosa, maka akan keluar hasil diagnosa dan solusinya."
-                    android:textSize="14dp"
-                    android:justificationMode="inter_word"
-                    android:fontFamily="@font/futurabook"
-                    android:textColor="@color/black"
-                    android:visibility="gone"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/profil4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapepth"
-            android:outlineAmbientShadowColor="@color/black"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            >
-            <LinearLayout
-                android:id="@+id/prof4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@drawable/shape4"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
-                        app:cardCornerRadius="20dp"
-                        >
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_person_24"
-                            android:color="@color/black"
-                            />
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/shape4"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:color="@color/black"
+                                    android:src="@drawable/ic_baseline_person_24" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futurastdheavy"
+                                    android:text="Nuril Lutvi Azizah, S.Si., M.Si"
+                                    android:textColor="@color/purple"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Dosen Umsida"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Pembimbing"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bio2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/futurabook"
+                            android:justificationMode="inter_word"
+                            android:text="Nuril Lutvi Azizah, S.Si., M.Si adalah seorang Dosen Pembimbing di Umsida yang memiliki keahlian dan pengalaman yang mendalam dalam bidangnya. Beliau adalah sosok yang penuh dedikasi dalam memberikan bimbingan kepada mahasiswa, dengan mengedepankan kesabaran dan kebijaksanaan."
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
                     </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/shapepth"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:outlineAmbientShadowColor="@color/black">
+
                     <LinearLayout
+                        android:id="@+id/prof1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_gravity="left"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Nama Dokter"
-                            android:textSize="16dp"
-                            android:textColor="@color/purple"
-                            android:fontFamily="@font/futurastdheavy"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Dokter"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Ahli Pakar"
-                            android:textSize="12dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/futurabook"
-                            />
-                    </LinearLayout>
+                            android:layout_gravity="left">
 
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/shape4"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:color="@color/black"
+                                    android:src="@drawable/ic_baseline_person_24" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futurastdheavy"
+                                    android:text="Ahmad Ahyar Sholihuddin"
+                                    android:textColor="@color/purple"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Mahasiswa Umsida"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/futurabook"
+                                    android:text="Pembuat"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bio1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/futurabook"
+                            android:justificationMode="inter_word"
+                            android:text="Saya adalah seorang mahasiswa infromatika, didalam fakultas saint dan teknologi Umsida, yang sedahng menyelesaikan Skripsi."
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
                 </LinearLayout>
-                <TextView
-                    android:id="@+id/bio4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginTop="-10dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="Cara pemakain aplikasi ini cukup mudah, masuk menu diagnosa, ceklis gejala sesuai yang dialami kucing anda, lalu tekan tombol diagnosa, maka akan keluar hasil diagnosa dan solusinya."
-                    android:textSize="14dp"
-                    android:justificationMode="inter_word"
-                    android:fontFamily="@font/futurabook"
-                    android:textColor="@color/black"
-                    android:visibility="gone"
-                    />
+
+
+
             </LinearLayout>
         </LinearLayout>
-
-
-
-
-    </LinearLayout>
-    </LinearLayout>
     </ScrollView>
 
 

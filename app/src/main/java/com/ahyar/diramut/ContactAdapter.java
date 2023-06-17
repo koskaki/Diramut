@@ -1,4 +1,4 @@
-package com.ahyar.diramut.model;
+package com.ahyar.diramut;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,16 +8,14 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ahyar.diramut.R;
-import com.ahyar.diramut.lihatpenyakit;
-
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> {
 
@@ -46,8 +44,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Contact contact = contacts.get(position);
-        holder.fName.setText(contact.getFirstName());
-        holder.number.setText(contact.getMobile());
+        holder.fName.setText(contact.getNmpenyakit());
         if(contact.getImage() == null){
             holder.imageView.setImageResource(R.drawable.vet);
         }
@@ -66,8 +63,8 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        ImageView imageView;
-        TextView fName,number;
+        CircleImageView imageView;
+        TextView fName;
         ArrayList<Contact>contacts = new ArrayList<Contact>();
         Context context;
         public ViewHolder(View itemView,Context context,ArrayList<Contact> contacts) {

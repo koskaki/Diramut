@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/bulatungu.xml" value="0.162" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/custom_input.xml" value="0.162" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.174" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/outlinepurple.xml" value="0.162" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/plus.xml" value="0.162" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/rounded_corner.xml" value="0.121" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shape.xml" value="0.121" />
@@ -16,14 +18,20 @@
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shapepth.xml" value="0.12" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/shapepurpleallroun.xml" value="0.138" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/drawable/warnamenubar.xml" value="0.12" />
-        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_main.xml" value="0.38450899031811897" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_dftpenyakit.xml" value="0.25" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_editpenyakit.xml" value="0.22" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_lihatpenyakit.xml" value="0.25" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_tambah.xml" value="0.17753623188405798" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/activity_tambahpenyakit.xml" value="0.22" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_bantuan.xml" value="0.22" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_beranda.xml" value="0.22" />
-        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_create.xml" value="0.33" />
-        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_diagnosa.xml" value="0.17581187010078386" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_create.xml" value="0.2603648424543947" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_diagnosa.xml" value="0.25" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_penyakit.xml" value="0.25" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/fragment_tentang.xml" value="0.25" />
+        <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/layout_penyakit.xml" value="0.25" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/layout/list_penyakit.xml" value="0.25" />
         <entry key="..\:/Referensi/Diramut/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/Uas Kecerdasan Buatan/Diramut/Diramut/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />

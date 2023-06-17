@@ -3,6 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ahyar.diramut">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature
+        android:name="android.hardware.Camera.any"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.Camera.autofocus"
+        android:required="false"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,8 +26,24 @@
         android:theme="@style/Theme.Diramut"
         tools:targetApi="31">
         <activity
+            android:name=".editpenyakit"
+            android:exported="false" />
+        <activity
+            android:name=".lihatpenyakit"
+            android:exported="false" />
+        <activity
+            android:name=".tambahpenyakit"
+            android:exported="false" />
+        <activity
+            android:name=".dftpenyakit"
+            android:exported="false" />
+        <activity
+            android:name=".tambah"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">

@@ -14,8 +14,8 @@ import androidx.fragment.app.Fragment;
 
 public class tentang extends Fragment {
 
-    LinearLayout profil1, pro1, profil2, pro2, profil3, pro3, profil4, pro4;
-    TextView bio1, bio2, bio3, bio4;
+    LinearLayout profil1, pro1, profil2, pro2, profil4, pro4;
+    TextView bio1, bio2, bio4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,17 +25,17 @@ public class tentang extends Fragment {
 
         profil1 = rootView.findViewById(R.id.profil1);
         profil2 = rootView.findViewById(R.id.profil2);
-        profil3 = rootView.findViewById(R.id.profil3);
+
         profil4 = rootView.findViewById(R.id.profil4);
 
         pro1 = rootView.findViewById(R.id.prof1);
         pro2 = rootView.findViewById(R.id.prof2);
-        pro3 = rootView.findViewById(R.id.prof3);
+
         pro4 = rootView.findViewById(R.id.prof4);
 
         bio1 = rootView.findViewById(R.id.bio1);
         bio2 = rootView.findViewById(R.id.bio2);
-        bio3 = rootView.findViewById(R.id.bio3);
+
         bio4 = rootView.findViewById(R.id.bio4);
 
         profil1.setOnClickListener(view -> {
@@ -58,15 +58,6 @@ public class tentang extends Fragment {
             }
         });
 
-        profil3.setOnClickListener(view -> {
-            if (bio3.getVisibility() == View.VISIBLE){
-                TransitionManager.beginDelayedTransition(pro3, new AutoTransition());
-                bio3.setVisibility(View.GONE);
-            } else {
-                TransitionManager.beginDelayedTransition(pro3, new AutoTransition());
-                bio3.setVisibility(View.VISIBLE);
-            }
-        });
 
         profil4.setOnClickListener(view -> {
             if (bio4.getVisibility() == View.VISIBLE){

@@ -1,9 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".editpenyakit">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/diramutk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/spoky"
+            android:text="Diramut"
+            android:textColor="@color/purple"
+            android:textSize="75dp" />
+
+        <TextView
+            android:id="@+id/sistemm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diramutk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-15dp"
+            android:text="sistem pakar diagnosa penyakit kucing"
+            android:textColor="@color/black"
+            android:textSize="11dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/snaphand"
+                    android:text="Ubah Penyakit"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/shapepurpleallroun" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:cornerRadius="20dp"
+                    android:src="@drawable/vet"
+                    android:layout_gravity="center"
+                    />
+                </androidx.cardview.widget.CardView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nama Penyakit"
+                    android:textColorHint="#A5A5A5"
+                    android:background="@drawable/custom_input"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_input"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Deskripsi"
+                    android:gravity="start"
+                    android:textColorHint="#A5A5A5"
+                    android:background="@drawable/custom_input"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minHeight="90dp"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_input"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Gejala"
+                    android:textColorHint="#A5A5A5"
+                    android:background="@drawable/custom_input"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minHeight="90dp"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_input"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Solusi"
+                    android:textColorHint="#A5A5A5"
+                    android:background="@drawable/custom_input"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minHeight="120dp"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_input"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Simpan"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Kembali"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
