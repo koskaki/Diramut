@@ -125,8 +125,8 @@ public class lihatpenyakit extends AppCompatActivity {
         DataHelper helper = new DataHelper(this,DataHelper.DB_NAME,null,DataHelper.DB_VERSION);
         SQLiteDatabase db = helper.getWritableDatabase();
         int result = db.delete(DataHelper.TABLE_NAME,"ID="+id,null);
-        Log.v("TAG","Item deleted "+result+" "+id);
-        Toast.makeText(this,"Item deleted "+id,Toast.LENGTH_SHORT).show();
+        Log.v("TAG","Terhapus "+result+" "+id);
+        Toast.makeText(this,"Terhapus "+id,Toast.LENGTH_SHORT).show();
         db.close();
     }
 }

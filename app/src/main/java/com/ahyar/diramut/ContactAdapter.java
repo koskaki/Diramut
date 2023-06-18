@@ -46,7 +46,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         final Contact contact = contacts.get(position);
         holder.fName.setText(contact.getNmpenyakit());
         if(contact.getImage() == null){
-            holder.imageView.setImageResource(R.drawable.vet);
+            holder.imageView.setImageResource(R.drawable.veti);
         }
         else{
             byte [] arr = Base64.decode(contact.getImage(),Base64.DEFAULT);

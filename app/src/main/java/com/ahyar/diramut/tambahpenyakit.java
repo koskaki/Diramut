@@ -104,9 +104,9 @@ public class tambahpenyakit extends AppCompatActivity {
                     (grantResults[1] == PackageManager.PERMISSION_GRANTED) &&
                     (grantResults[2] == PackageManager.PERMISSION_GRANTED)) {
                 imageView.setEnabled(true);
-                if (userChoosenTask.equals("Take Photo")) {
+                if (userChoosenTask.equals("Ambil Foto")) {
                     cameraIntent();
-                } else if (userChoosenTask.equals("Choose from Library")) {
+                } else if (userChoosenTask.equals("Pilih dari Galeri")) {
                     galleryIntent();
                 }
             } else {
@@ -167,27 +167,27 @@ public class tambahpenyakit extends AppCompatActivity {
     }
 
     private void selectImage() {
-        final CharSequence[] items = { "Take Photo", "Choose from Library",
-                "Cancel" };
+        final CharSequence[] items = { "Ambil Foto", "Pilih dari Galeri",
+                "Batal" };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(tambahpenyakit.this);
-        builder.setTitle("Add Photo!");
+        builder.setTitle("Pilihan");
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
                 boolean result= Utility.checkPermission(tambahpenyakit.this);
 
-                if (items[item].equals("Take Photo")) {
-                    userChoosenTask ="Take Photo";
+                if (items[item].equals("Ambil Foto")) {
+                    userChoosenTask ="Ambil Foto";
                     if(result)
                         cameraIntent();
 
-                } else if (items[item].equals("Choose from Library")) {
-                    userChoosenTask ="Choose from Library";
+                } else if (items[item].equals("Pilih dari Galeri")) {
+                    userChoosenTask ="Pilih dari Galeri";
                     if(result)
                         galleryIntent();
 
-                } else if (items[item].equals("Cancel")) {
+                } else if (items[item].equals("Batal")) {
                     dialog.dismiss();
                 }
             }

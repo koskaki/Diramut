@@ -72,19 +72,14 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
                     >
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    app:cornerRadius="20dp"
-                    android:src="@drawable/vet"
-                    android:layout_gravity="center"
+                    android:src="@drawable/veti"
                     />
                 </androidx.cardview.widget.CardView>
                 <com.google.android.material.textfield.TextInputLayout

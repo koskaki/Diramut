@@ -76,7 +76,7 @@ public class editpenyakit extends AppCompatActivity {
                     Toast.makeText(editpenyakit.this, "Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
                 }else {
                     addData();
-                    Toast.makeText(editpenyakit.this, "Updated successfully...!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(editpenyakit.this, "Berhasil", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }
@@ -100,9 +100,9 @@ public class editpenyakit extends AppCompatActivity {
                     (grantResults[1] == PackageManager.PERMISSION_GRANTED) &&
                     (grantResults[2] == PackageManager.PERMISSION_GRANTED)) {
                 imageButton.setEnabled(true);
-                if (userChoosenTask.equals("Take Photo")) {
+                if (userChoosenTask.equals("Ambil Foto")) {
                     cameraIntent();
-                } else if (userChoosenTask.equals("Choose from Library")) {
+                } else if (userChoosenTask.equals("Pilih dari Galeri")) {
                     galleryIntent();
                 }
             } else {
@@ -163,27 +163,27 @@ public class editpenyakit extends AppCompatActivity {
     }
 
     private void selectImage() {
-        final CharSequence[] items = { "Take Photo", "Choose from Library",
-                "Cancel" };
+        final CharSequence[] items = { "Ambil Foto", "Pilih dari Galeri",
+                "Batal" };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(editpenyakit.this);
-        builder.setTitle("Add Photo!");
+        builder.setTitle("Pilihan");
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
                 boolean result= Utility.checkPermission(editpenyakit.this);
 
-                if (items[item].equals("Take Photo")) {
-                    userChoosenTask ="Take Photo";
+                if (items[item].equals("Ambil Foto")) {
+                    userChoosenTask ="Ambil Foto";
                     if(result)
                         cameraIntent();
 
-                } else if (items[item].equals("Choose from Library")) {
-                    userChoosenTask ="Choose from Library";
+                } else if (items[item].equals("Pilih dari Galeri")) {
+                    userChoosenTask ="Pilih dari Galeri";
                     if(result)
                         galleryIntent();
 
-                } else if (items[item].equals("Cancel")) {
+                } else if (items[item].equals("Batal")) {
                     dialog.dismiss();
                 }
             }
@@ -245,7 +245,7 @@ public class editpenyakit extends AppCompatActivity {
         text4.setText(contact.getGejala());
         text5.setText(contact.getSolusi());
         if (contact.getImage() == null) {
-            imageButton.setImageResource(R.drawable.vet);
+            imageButton.setImageResource(R.drawable.veti);
         } else {
             byte[] arr = Base64.decode(contact.getImage(), Base64.DEFAULT);
             Bitmap bitmap = BitmapFactory.decodeByteArray(arr, 0, arr.length);
