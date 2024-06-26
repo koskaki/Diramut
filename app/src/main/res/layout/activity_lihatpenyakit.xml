@@ -131,6 +131,7 @@
         android:layout_marginTop="20dp"
         android:text="Edit"
         android:textColor="@color/white"
+        android:visibility="gone"
         android:background="@drawable/shape1"
     />
         <Button
@@ -140,6 +141,7 @@
             android:layout_marginTop="10dp"
             android:text="Hapus"
             android:textColor="@color/white"
+            android:visibility="gone"
             android:background="@drawable/shape1"
             />
         <Button

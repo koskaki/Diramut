@@ -60,16 +60,18 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="40dp"
                 >
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Apa saja gejala yang dialami kucingmu ?"
-                android:gravity="left"
-                android:textSize="30dp"
-                android:textColor="#474747"
-                android:fontFamily="@font/spoky"
-                />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Umum"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
 
             <CheckBox
                 android:id="@+id/g01"
@@ -77,186 +79,69 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="#474747"
-                android:text="Muntah" />
-
-            <CheckBox
-                android:id="@+id/g02"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
                 android:text="Tidak nafsu makan" />
 
-            <CheckBox
-                android:id="@+id/g03"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Lesu" />
-
-            <CheckBox
-                android:id="@+id/g04"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Sering bab" />
-
-            <CheckBox
-                android:id="@+id/g05"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Diare" />
-
-            <CheckBox
-                android:id="@+id/g06"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Penurunan berat badan" />
-
-            <CheckBox
-                android:id="@+id/g07"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Gatal sekitar Anus" />
-
-            <CheckBox
-                android:id="@+id/g08"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Mata Berair" />
-
-            <CheckBox
-                android:id="@+id/g09"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Mata Belekan" />
-
-            <CheckBox
-                android:id="@+id/g10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Demam" />
-
-            <CheckBox
-                android:id="@+id/g11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Bulu Kusam" />
-
-            <CheckBox
-                android:id="@+id/g12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Luka-luka pada kulit tidak simetris dan berbntuk bulat" />
-
-            <CheckBox
-                android:id="@+id/g13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Bulu rontok hingga kebotakan" />
-
-            <CheckBox
-                android:id="@+id/g14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Luka-luka didareah tengkuk, leher dan kepala" />
-
-            <CheckBox
-                android:id="@+id/g15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Luka-luka pada kulit simetris dan berbntuk bulat" />
-
-            <CheckBox
-                android:id="@+id/g16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Jaundis atau kuning ditelinga" />
-
-            <CheckBox
-                android:id="@+id/g17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Mata berubah warna" />
-
-            <CheckBox
-                android:id="@+id/g18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Gusi kekuningan" />
-
-            <CheckBox
-                android:id="@+id/g19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#474747"
-                android:text="Dehidrasi" />
-
                 <CheckBox
-                    android:id="@+id/g20"
+                    android:id="@+id/g02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
-                    android:text="Flu" />
+                    android:text="Penurunan berat badan" />
 
                 <CheckBox
-                    android:id="@+id/g21"
+                    android:id="@+id/g03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
-                    android:text="Bersin-bersin" />
+                    android:text="Pucat" />
 
                 <CheckBox
-                    android:id="@+id/g22"
+                    android:id="@+id/g04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
-                    android:text="Sesak nafas" />
+                    android:text="Demam" />
 
                 <CheckBox
-                    android:id="@+id/g23"
+                    android:id="@+id/g05"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
-                    android:text="Sariawan dimulut" />
+                    android:text="Kembung" />
 
                 <CheckBox
-                    android:id="@+id/g24"
+                    android:id="@+id/g06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mata belekan" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Mulut dan Telinga"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Sariwan" />
+
+                <CheckBox
+                    android:id="@+id/g08"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
@@ -264,15 +149,181 @@
                     android:text="Sering keluar air liur" />
 
                 <CheckBox
-                    android:id="@+id/g25"
+                    android:id="@+id/g09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Bau mulut tajam" />
+
+                <CheckBox
+                    android:id="@+id/g10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mulut berbusa" />
+
+                <CheckBox
+                    android:id="@+id/g11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
                     android:text="Infeksi telinga" />
 
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Kulit dan Bulu"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
                 <CheckBox
-                    android:id="@+id/g26"
+                    android:id="@+id/g12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Bulu kusam" />
+
+                <CheckBox
+                    android:id="@+id/g13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Bulu sering rontok" />
+
+                <CheckBox
+                    android:id="@+id/g14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Kebotakan disertai ketombe" />
+
+                <CheckBox
+                    android:id="@+id/g15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Kulit kemerahan" />
+
+                <CheckBox
+                    android:id="@+id/g16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Luka kulit tidak simetris dan berbntuk bulat" />
+
+                <CheckBox
+                    android:id="@+id/g17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Luka-luka didareah tengkuk, leher dan kepala" />
+
+                <CheckBox
+                    android:id="@+id/g18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Gatal sekitar Anus" />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Kebersihan"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Jarang mandi" />
+
+                <CheckBox
+                    android:id="@+id/g20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Tempat pop kurang bersih" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Vaksin atau obat"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Vaksin tidak komplit atau belum pernah vaksin" />
+
+                <CheckBox
+                    android:id="@+id/g22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Tidak pernah dikasih anti parasit" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Tingkah Laku"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Lesu" />
+
+                <CheckBox
+                    android:id="@+id/g24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Lemas" />
+                <CheckBox
+                    android:id="@+id/g25"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
@@ -280,12 +331,223 @@
                     android:text="Lumpuh tiba-tiba" />
 
                 <CheckBox
+                    android:id="@+id/g26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Cepat lelah" />
+
+                <CheckBox
                     android:id="@+id/g27"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:textColor="#474747"
-                    android:text="Batuk-batuk" />
+                    android:text="Gelisah" />
+
+                <CheckBox
+                    android:id="@+id/g28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Suka bersembunyi" />
+
+                <CheckBox
+                    android:id="@+id/g29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mengeong kencang" />
+
+                <CheckBox
+                    android:id="@+id/g30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mata melotot" />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Pernafasan"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Pilek" />
+
+                <CheckBox
+                    android:id="@+id/g32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Batuk" />
+
+                <CheckBox
+                    android:id="@+id/g33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Sering bersin / bersin diwaktu tertentu" />
+
+                <CheckBox
+                    android:id="@+id/g34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Sesak Nafas" />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Saluran Kencing"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Tidak kencing seharian" />
+
+                <CheckBox
+                    android:id="@+id/g36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Kencing sedikit sedikit" />
+
+                <CheckBox
+                    android:id="@+id/g37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Kencing berdarah" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gejala Pencernaan"
+                    android:gravity="left"
+                    android:textSize="30dp"
+                    android:textColor="#474747"
+                    android:fontFamily="@font/spoky"
+                    />
+
+                <CheckBox
+                    android:id="@+id/g38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah mendadak" />
+
+                <CheckBox
+                    android:id="@+id/g39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah lebih dari 5x sehari" />
+
+                <CheckBox
+                    android:id="@+id/g40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah diwaktu tertentu" />
+
+                <CheckBox
+                    android:id="@+id/g41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah pakan" />
+
+                <CheckBox
+                    android:id="@+id/g42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah disertai cacing" />
+
+                <CheckBox
+                    android:id="@+id/g43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Muntah berwarna kuning, berbusa, dan lendIr putih" />
+
+                <CheckBox
+                    android:id="@+id/g44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mencret" />
+
+                <CheckBox
+                    android:id="@+id/g45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Mencret disertai darah" />
+
+                <CheckBox
+                    android:id="@+id/g46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Bau poop tajam dengan darah" />
+
+                <CheckBox
+                    android:id="@+id/g47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Bab lebih dari 8x sehari" />
+
+                <CheckBox
+                    android:id="@+id/g48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#474747"
+                    android:text="Diare berdarah" />
 
 
             </LinearLayout>
@@ -325,7 +587,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hasil Diagnosa"
+                    android:text="Diagnosa sementara"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"

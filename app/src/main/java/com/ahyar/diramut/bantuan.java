@@ -20,8 +20,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class bantuan extends Fragment {
 
     TextView details1, details2, details3, details4, details5, details6, details7, details8;
-    LinearLayout layout1, layout2, layout3, layout4, layout5, layout6, layout7, layout8, layout11, layout12;
-    CardView card1, card2, card3, card4, card5, card6, card7, card8, card11, card12;
+    LinearLayout layout1, layout2, layout3, layout4, layout5, layout6, layout7, layout8, layout11, layout12, layout13;
+    CardView card1, card2, card3, card4, card5, card6, card7, card8, card11, card12, card13;
     FloatingActionButton hubungi;
 
 
@@ -43,6 +43,7 @@ public class bantuan extends Fragment {
         card8 = rootView.findViewById(R.id.card8);
         card11 = rootView.findViewById(R.id.card11);
         card12 = rootView.findViewById(R.id.card12);
+        card13 = rootView.findViewById(R.id.card13);
 
         details1 = rootView.findViewById(R.id.details1);
         details2 = rootView.findViewById(R.id.details2);
@@ -63,11 +64,12 @@ public class bantuan extends Fragment {
         layout8 = rootView.findViewById(R.id.layout8);
         layout11 = rootView.findViewById(R.id.layout11);
         layout12 = rootView.findViewById(R.id.layout12);
+        layout13 = rootView.findViewById(R.id.layout13);
 
         hubungi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url="https://wa.me/6287790077798/";
+                String url="https://wa.me/6282125477855/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -86,7 +88,17 @@ public class bantuan extends Fragment {
         card12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url="https://goo.gl/maps/nd6qpijCUj2wP4XD7?coh=178573&entry=tt";
+                String url="https://maps.app.goo.gl/sJrAt8fz2qM7djRW8";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        card13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="https://maps.app.goo.gl/JMSe3VYxQ9pHfBkW9";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);

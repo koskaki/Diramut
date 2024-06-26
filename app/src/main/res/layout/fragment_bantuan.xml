@@ -134,6 +134,38 @@
          </androidx.cardview.widget.CardView>
 
          <androidx.cardview.widget.CardView
+             android:id="@+id/card13"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/shape1"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:cardBackgroundColor="#646464"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Lokasi Klinik Hewan Halovetarie"
+                   android:textColor="@color/white"
+                   android:textSize="16dp" />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
              android:id="@+id/card1"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"

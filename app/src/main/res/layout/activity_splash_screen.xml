@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sistem"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -78,25 +78,34 @@
             android:layout_below="@+id/btnlanjut"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="dibuat oleh Ahmad Ahyar S"
+            android:text="dibuat oleh Team Diramut Umsida"
             android:textColor="@color/white"
             android:textSize="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="partner by:"
             android:textColor="@color/yellow"
             android:textSize="10dp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/halovet" />
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/vet" />
 
 
     </LinearLayout>
+
+
 
     <ImageView
         android:id="@+id/homept"
